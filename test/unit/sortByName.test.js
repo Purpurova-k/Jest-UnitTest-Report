@@ -15,7 +15,7 @@ describe("Books names test suit", () => {
     ]);
   });
 
-  it("Books names of equal length", () => {
+  it("Books names of equal length should not be sorted", () => {
     expect(
       sorting.sortByName([
         "Гарри Поттер",
