@@ -1,0 +1,49 @@
+{
+  "name": "jest-unittest-report",
+  "version": "1.0.0",
+  "description": "jest test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --collectCoverage",
+    "eslint": "eslint",
+    "prettier": "prettier"
+  },
+  "keywords": [
+    "jest",
+    "test",
+    "jsaqa"
+  ],
+  "author": "Kate Purpurova",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Purpurova-k/Jest-UnitTest-Report.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Purpurova-k/Jest-UnitTest-Report/issues"
+  },
+  "homepage": "https://github.com/Purpurova-k/Jest-UnitTest-Report#readme",
+  "jest": {
+    "coverageThreshold": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100
+    },
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!.eslintrc.js"
+    ]
+  }
+}
